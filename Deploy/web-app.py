@@ -62,7 +62,7 @@ def detect_deepfake(model_path, feat_list):
 def main():
     st.title("Welcome to the AudioShield")
     st.text("Audioshield is a software designed to detect deepfake audio samples")
-    image = Image.open("/Users/savin/Desktop/deepfake-logo.png")
+    image = Image.open("deepfake-logo.png")
     st.image(image)
 
 
