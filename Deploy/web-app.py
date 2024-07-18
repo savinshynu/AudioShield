@@ -1,18 +1,20 @@
 import sys
 import librosa
+import joblib
 import numpy as np
 import streamlit as st
 from tensorflow.keras import models
 from PIL import Image
 
 
-model_filepath = "../Models/simple-cnn-ssv.h5"
+model_filepath = "simple-cnn-ssv.h5"
 
 
 def load_model(filepath):
     # load model
     new_model = models.load_model(filepath)
-    #model summary
+    #new_model1 = joblib.load(filepath)
+	#model summary
     #new_model.summary()
 
     return new_model
@@ -80,8 +82,9 @@ def main():
 
 if __name__ == '__main__':
     main()
-    #file_uploaded = sys.argv[1]
+    
+	#file_uploaded = sys.argv[1]
     #feature_list = extract_feature(file_uploaded)
     #output = detect_deepfake(model_filepath, feature_list)
 
-    #print(output)
+    #print(outputt)
