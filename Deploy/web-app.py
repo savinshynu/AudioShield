@@ -6,7 +6,7 @@ from tensorflow.keras import models
 from PIL import Image
 
 
-model_filepath = "simple-cnn-ssv.h5"
+model_filepath = "../Models/simple-cnn-ssv.h5"
 
 
 def load_model(filepath):
