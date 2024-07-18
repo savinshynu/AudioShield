@@ -1,2 +1,2 @@
 # AudioShield
-Using deep learning to detect deefake audio data
+Using deep learning to detect deepfake audio data
